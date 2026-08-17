@@ -5,7 +5,7 @@ import { usePortfolio } from '../content/PortfolioContext'
 const neura = {
   company: 'Neura Solutions Limited',
   website: 'https://neura-solutions.vercel.app/',
-  logoImage: 'https://neura-solutions.vercel.app/assets/brand/neura-mark.png',
+  logoImage: '/assets/company-logos/neura-mark.jpeg',
   location: 'Dhaka, Bangladesh',
   role: 'Co-Founder & Director',
   summary:
