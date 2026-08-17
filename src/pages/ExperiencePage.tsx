@@ -149,7 +149,7 @@ export function ExperiencePage() {
           </p>
         </div>
 
-        <div className="max-w-5xl">
+        <div className="w-full pl-12 sm:pl-16">
           <article className="relative overflow-hidden rounded-3xl border border-violet-300/15 bg-gradient-to-br from-violet-500/[.08] via-white/[.03] to-cyan-400/[.04] p-6 transition hover:border-violet-300/25 sm:p-7">
             <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-violet-500/10 blur-3xl" />
 
@@ -226,6 +226,7 @@ export function ExperiencePage() {
       </section>
 
       <section className="container-wide pb-16">
+        <div className="pl-12 sm:pl-16">
         <div className="rounded-3xl border border-amber-300/15 bg-amber-300/[.04] p-6 sm:p-7">
           <div className="flex gap-4">
             <ArrowUpRight className="mt-1 shrink-0 text-amber-200" size={20} />
@@ -238,10 +239,11 @@ export function ExperiencePage() {
                 bug records, and confidential documentation private. This page focuses on
                 public, high-level responsibilities and outcomes only.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
+              </div>
+    </div>
+  </div>
+</div>
+</section>
     </>
   )
 }
