@@ -239,11 +239,11 @@ export function ExperiencePage() {
                 bug records, and confidential documentation private. This page focuses on
                 public, high-level responsibilities and outcomes only.
               </p>
-              </div>
-    </div>
-  </div>
-</div>
-</section>
+             </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
