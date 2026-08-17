@@ -39,7 +39,7 @@ export function ExperiencePage() {
           </h2>
         </div>
 
-        <div className="relative max-w-5xl before:absolute before:left-[18px] before:top-5 before:h-[calc(100%-40px)] before:w-px before:bg-gradient-to-b before:from-violet-400/70 before:via-cyan-300/30 before:to-transparent sm:before:left-[26px]">
+        <div className="relative w-full before:absolute before:left-[18px] before:top-5 before:h-[calc(100%-40px)] before:w-px before:bg-gradient-to-b before:from-violet-400/70 before:via-cyan-300/30 before:to-transparent sm:before:left-[26px]">
           <div className="space-y-7">
             {experiences.map((experience, index) => (
               <article key={experience.company} className="relative pl-12 sm:pl-16">
