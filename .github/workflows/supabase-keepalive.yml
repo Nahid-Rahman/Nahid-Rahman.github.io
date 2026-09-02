@@ -1,0 +1,28 @@
+name: Supabase Keep Alive
+
+on:
+  schedule:
+    # 10:00 AM Bangladesh time
+    - cron: "0 4 * * *"
+
+    # 10:00 PM Bangladesh time
+    - cron: "0 16 * * *"
+
+  workflow_dispatch:
+
+jobs:
+  keep-alive:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Query Supabase database
+        run: |
+          echo "Sending database query to Supabase..."
+
+          curl --fail --show-error --silent \
+            "${{ secrets.SUPABASE_URL }}/rest/v1/keep_alive?select=id&limit=1" \
+            -H "apikey: ${{ secrets.SUPABASE_ANON_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}"
+
+          echo ""
+          echo "Supabase database query successful."
